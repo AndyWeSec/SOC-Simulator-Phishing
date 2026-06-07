@@ -24,9 +24,6 @@ An end-to-end incident response lab simulating an enterprise phishing attack vec
 Image 1 - Dashboard used for incoming alerts
 
 <img width="1437" height="717" alt="Screenshot 2026-06-07 at 20 04 52" src="https://github.com/user-attachments/assets/be8ab906-2792-43f1-8082-5eac4e804f18" />
-
-Image 2 - First alert. False Posetive, following elastic seim and totalvirus investigations.
-
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 05 26" src="https://github.com/user-attachments/assets/2d154df8-7b50-4192-a027-28c9224081da" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 05 38" src="https://github.com/user-attachments/assets/78fe7621-2fe6-4e9c-9998-eb8fc58f3afe" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 05 56" src="https://github.com/user-attachments/assets/4de427cb-c2ad-49d8-a23c-9a9d2604a15a" />
