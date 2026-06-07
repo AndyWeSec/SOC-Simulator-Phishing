@@ -21,8 +21,7 @@ An end-to-end incident response lab simulating an enterprise phishing attack vec
 
 # Steps and Actions
 
-Image 1 - Dashboard used for incoming alerts
-
+Alert 1 - False posetive after Elastic (Seim) and TotalVirus investigations
 <img width="1437" height="717" alt="Screenshot 2026-06-07 at 20 04 52" src="https://github.com/user-attachments/assets/be8ab906-2792-43f1-8082-5eac4e804f18" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 05 26" src="https://github.com/user-attachments/assets/2d154df8-7b50-4192-a027-28c9224081da" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 05 38" src="https://github.com/user-attachments/assets/78fe7621-2fe6-4e9c-9998-eb8fc58f3afe" />
@@ -34,6 +33,19 @@ Image 1 - Dashboard used for incoming alerts
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 09 38" src="https://github.com/user-attachments/assets/8562599f-fa4f-44d0-bbe2-2144a437979e" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 10 15" src="https://github.com/user-attachments/assets/9d3a6409-ef42-4eb2-8d8f-5d36ad298d3c" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 11 05" src="https://github.com/user-attachments/assets/717e0be4-3ad3-4f5c-bac5-c75d42d6890a" />
+
+Alert 2 - True Posetive follwing a link in email being identified as a threat on TotalVirus.
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 11 15" src="https://github.com/user-attachments/assets/fbcdcccc-2987-4357-be11-3e78eea21173" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 11 24" src="https://github.com/user-attachments/assets/7424888e-bb59-4e9f-a10f-973be2f3fa9b" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 11 35" src="https://github.com/user-attachments/assets/53d0b0ed-bbf7-4854-9c76-7f1f0215f534" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 12 07" src="https://github.com/user-attachments/assets/5bdbcd01-075d-4d87-94e5-5cab0cffb303" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 12 46" src="https://github.com/user-attachments/assets/30fab7ca-4a25-4c7d-8935-787b77bc1098" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 13 06" src="https://github.com/user-attachments/assets/39b3788e-d825-46ea-bf02-ecab6fa317e2" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 17 48" src="https://github.com/user-attachments/assets/5cd9b136-e9b7-47d0-b693-1acc2a8d64c9" />
+
+
+
+
 
 
 
