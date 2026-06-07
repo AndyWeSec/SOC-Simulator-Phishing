@@ -22,3 +22,5 @@ An end-to-end incident response lab simulating an enterprise phishing attack vec
 # Steps and Actions
 
 
+<img width="1437" height="717" alt="Screenshot 2026-06-07 at 20 04 52" src="https://github.com/user-attachments/assets/be8ab906-2792-43f1-8082-5eac4e804f18" />
+
