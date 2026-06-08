@@ -60,6 +60,9 @@ An end-to-end incident response lab simulating an enterprise phishing attack vec
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 24 39" src="https://github.com/user-attachments/assets/112bb91a-b514-4600-b2ee-f1499431882f" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 27 14" src="https://github.com/user-attachments/assets/14ab6111-a1c7-4973-8669-3457e7b7b283" />
 
+                                                                                                                                                               
+
+
 # Simulation result 
 
 <img width="1470" height="572" alt="Screenshot 2026-06-07 at 20 28 18" src="https://github.com/user-attachments/assets/7ba87964-ee89-4432-a8d8-ad6e8c4c0120" />
