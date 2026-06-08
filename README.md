@@ -44,7 +44,25 @@ An end-to-end incident response lab simulating an enterprise phishing attack vec
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 17 48" src="https://github.com/user-attachments/assets/5cd9b136-e9b7-47d0-b693-1acc2a8d64c9" />
 
 
+# Alert 3 - True Posetive following Firewall breach
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 18 07" src="https://github.com/user-attachments/assets/66f9e77b-1d57-4c41-a37b-a89d3caf498f" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 18 31" src="https://github.com/user-attachments/assets/efa92c1c-6263-41c2-9b7c-b98c986d4205" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 19 09" src="https://github.com/user-attachments/assets/c22fded4-d1bc-4160-ad74-8066a114edcb" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 19 15" src="https://github.com/user-attachments/assets/3348f7ef-338c-4fc4-8c4d-327bc0495dda" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 22 43" src="https://github.com/user-attachments/assets/cbcf4343-1199-4d35-bc19-7c1201999418" />
 
+
+# Alert 4 - True Posetive following email from company masquerading as microsoft adding a link that has been flagged as a threat.
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 23 00" src="https://github.com/user-attachments/assets/3e9a60a5-c56f-47f3-b93a-1ca4450584d6" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 23 09" src="https://github.com/user-attachments/assets/d231b99a-bccb-4ecc-9098-27d73b945a3c" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 23 40" src="https://github.com/user-attachments/assets/17c069e8-3ee0-4aba-b5ee-114d2086a755" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 24 24" src="https://github.com/user-attachments/assets/a656f6ae-689c-4478-8ac8-2f23ea668f00" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 24 39" src="https://github.com/user-attachments/assets/112bb91a-b514-4600-b2ee-f1499431882f" />
+<img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 27 14" src="https://github.com/user-attachments/assets/14ab6111-a1c7-4973-8669-3457e7b7b283" />
+
+# Simulation result 
+
+<img width="1470" height="572" alt="Screenshot 2026-06-07 at 20 28 18" src="https://github.com/user-attachments/assets/7ba87964-ee89-4432-a8d8-ad6e8c4c0120" />
 
 
 
