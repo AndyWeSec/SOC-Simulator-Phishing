@@ -20,13 +20,13 @@ An end-to-end incident response lab simulating an enterprise phishing attack vec
 * **Incident Classification:** Differentiating between True Positives and False Positives to draft comprehensive, structured blue team incident reports.
 
 # Steps and Actions
-# Alert 1: Flase Positive Investigation
+# Alert 1: False Positive Investigation
 ### Initial Alert : Received a Medium severity alert for an "Inbound Email Containing Suspicious External Link"
 <img width="1437" height="717" alt="Screenshot 2026-06-07 at 20 04 52" src="https://github.com/user-attachments/assets/be8ab906-2792-43f1-8082-5eac4e804f18" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 05 26" src="https://github.com/user-attachments/assets/2d154df8-7b50-4192-a027-28c9224081da" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 05 38" src="https://github.com/user-attachments/assets/78fe7621-2fe6-4e9c-9998-eb8fc58f3afe" />
 
-### Log Analysis and Threat Intel: Analayzed the ingested email telemetry in Elastic SEIM to extract the sender domain. Running the URL throigh VirusTotal returned an "Item Not Found" result, indicating a lack of melicious history.
+### Log Analysis and Threat Intel: Analayzed the ingested email telemetry in Elastic SEIM to extract the sender domain. Running the URL throigh VirusTotal returned an "Item Not Found" result, indicating a lack of malicious history.
 
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 05 56" src="https://github.com/user-attachments/assets/4de427cb-c2ad-49d8-a23c-9a9d2604a15a" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 06 04" src="https://github.com/user-attachments/assets/b1615a94-4514-48e1-9039-951d7d8db7e5" />
