@@ -20,11 +20,14 @@ An end-to-end incident response lab simulating an enterprise phishing attack vec
 * **Incident Classification:** Differentiating between True Positives and False Positives to draft comprehensive, structured blue team incident reports.
 
 # Steps and Actions
-
-# Alert 1 - False positive after Elastic (SEIM) and VirusTotal investigations
+# Alert 1: Flase Positive Investigation
+### Initial Alert : Received a Medium severity alert for an "Inbound Email Containing Suspicious External Link"
 <img width="1437" height="717" alt="Screenshot 2026-06-07 at 20 04 52" src="https://github.com/user-attachments/assets/be8ab906-2792-43f1-8082-5eac4e804f18" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 05 26" src="https://github.com/user-attachments/assets/2d154df8-7b50-4192-a027-28c9224081da" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 05 38" src="https://github.com/user-attachments/assets/78fe7621-2fe6-4e9c-9998-eb8fc58f3afe" />
+
+### Log Analysis and Threat Intel: Analayzed the ingested email telemetry in Elastic SEIM to extract the sender domain. Running the URL throigh VirusTotal returned an "Item Not Found" result, indicating a lack of melicious history.
+
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 05 56" src="https://github.com/user-attachments/assets/4de427cb-c2ad-49d8-a23c-9a9d2604a15a" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 06 04" src="https://github.com/user-attachments/assets/b1615a94-4514-48e1-9039-951d7d8db7e5" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 07 06" src="https://github.com/user-attachments/assets/40e9d00f-82cf-4769-9acc-ee9ab95841a4" />
@@ -34,31 +37,57 @@ An end-to-end incident response lab simulating an enterprise phishing attack vec
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 10 15" src="https://github.com/user-attachments/assets/9d3a6409-ef42-4eb2-8d8f-5d36ad298d3c" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 11 05" src="https://github.com/user-attachments/assets/717e0be4-3ad3-4f5c-bac5-c75d42d6890a" />
 
-# Alert 2 - True Positive follwing a link in email being identified as a threat on VirusTotal.
+### Disposition and Resolution: Classified the incident as a false positive due to a lack of threat indicators. Closed the alert with an explaination that the link belonged to a legitimate internal training domain.
+
+# Alert 2 - True Positive Link
+
+# Initial Alert: Receieved an alert for an "Inbound Email Containing Suspicious External Link" sent to user.
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 11 15" src="https://github.com/user-attachments/assets/fbcdcccc-2987-4357-be11-3e78eea21173" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 11 24" src="https://github.com/user-attachments/assets/7424888e-bb59-4e9f-a10f-973be2f3fa9b" />
+
+### Log and Analysis and Threat Intel: Discovered a phishing email masquerading as an Amazon delivery notification urging the user to click a shortened "bit.ly" link. VirusTotal heavily flagged the URL as a malicious phishing vector.
+
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 11 35" src="https://github.com/user-attachments/assets/53d0b0ed-bbf7-4854-9c76-7f1f0215f534" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 12 07" src="https://github.com/user-attachments/assets/5bdbcd01-075d-4d87-94e5-5cab0cffb303" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 12 46" src="https://github.com/user-attachments/assets/30fab7ca-4a25-4c7d-8935-787b77bc1098" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 13 06" src="https://github.com/user-attachments/assets/39b3788e-d825-46ea-bf02-ecab6fa317e2" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 17 48" src="https://github.com/user-attachments/assets/5cd9b136-e9b7-47d0-b693-1acc2a8d64c9" />
 
+### Disposition and Remediation: Classified as a True Positive. Submitted an incident report recommending the immediate quarentine of the email and blocking the spoofed sender address. 
 
-# Alert 3 - True Positive following Firewall breach
+
+# Alert 3 - True Positive (Firewall Breach)
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 18 07" src="https://github.com/user-attachments/assets/66f9e77b-1d57-4c41-a37b-a89d3caf498f" />
+
+### Initial Alert: A High severity alert triggered for Access To Blacklisted External URL Blocked By Firewall
+
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 18 31" src="https://github.com/user-attachments/assets/efa92c1c-6263-41c2-9b7c-b98c986d4205" />
+
+### Log and Analysis: Cross-references network proxy logs inside Elastic SEIM. Found that internal host 10.20.2.17 attempted an outbound connection to detination IP 67.199.248.11 over Port 80. The log revealed the traffic matched a rule blocked websites.
+
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 19 09" src="https://github.com/user-attachments/assets/c22fded4-d1bc-4160-ad74-8066a114edcb" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 19 15" src="https://github.com/user-attachments/assets/3348f7ef-338c-4fc4-8c4d-327bc0495dda" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 22 43" src="https://github.com/user-attachments/assets/cbcf4343-1199-4d35-bc19-7c1201999418" />
 
+### Disposition and Remediation: Classified as a True Positive. While the firewall successfully blocked the outbound connection, the traffic confirms an internal endpoint compromise. Submitted an incident report escalating the threat and initiated local firewall reconfiguration and endpoint isolation for host.
 
-# Alert 4 - True Positive following email from company masquerading as microsoft adding a link that has been flagged as a threat.
+
+# Alert 4 - True Positive (Spoofed Microsoft Email)
+### Initial Alert: A Medium severity alert triggered for an Inbound Email Containing Suspicious External Link targeting user.
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 23 00" src="https://github.com/user-attachments/assets/3e9a60a5-c56f-47f3-b93a-1ca4450584d6" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 23 09" src="https://github.com/user-attachments/assets/d231b99a-bccb-4ecc-9098-27d73b945a3c" />
+
+### Log and Analysis: Reviewed the raw email body logs. The email masquerading as a legitimate Microsoft Security Team notification regarding "Unusual Sign-In Activity", but the sender address was identified as a spoofed external domain: no-reply@microsoftsupport.co
+
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 23 40" src="https://github.com/user-attachments/assets/17c069e8-3ee0-4aba-b5ee-114d2086a755" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 24 24" src="https://github.com/user-attachments/assets/a656f6ae-689c-4478-8ac8-2f23ea668f00" />
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 24 39" src="https://github.com/user-attachments/assets/112bb91a-b514-4600-b2ee-f1499431882f" />
+
+### Threat Intelligence Lookup: Ran the embedded link (http://microsoftsupport.co/login) through VirusTotal. The domain was flagged by threat intelligence vendors as malicious credential harvesting page.
+
 <img width="1470" height="739" alt="Screenshot 2026-06-07 at 20 27 14" src="https://github.com/user-attachments/assets/14ab6111-a1c7-4973-8669-3457e7b7b283" />
+
+### Disposition and Remediation: Classified as a True Positive. Submitted a comprehensive case report to quarantine the malicious email, block the domain "microsoftsupport.co" enterprise-wide and trigger and immediate mandatory reset for the targeted user account.
 
                                                                                                                                                                
 
